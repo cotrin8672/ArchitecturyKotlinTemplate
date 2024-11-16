@@ -37,7 +37,7 @@ publisher {
     displayName.set("$modName-${project.name}-$modVersion")
     gameVersions.set(listOf(libs.versions.minecraft.get()))
     setLoaders(ModLoader.FABRIC)
-    setCurseEnvironment(CurseEnvironment.CLIENT)
+    setCurseEnvironment(CurseEnvironment.BOTH)
     artifact.set("build/libs/$modId-${project.name}-$modVersion.jar")
 
     curseDepends {
